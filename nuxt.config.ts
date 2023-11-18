@@ -1,9 +1,22 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/i18n', 'nuxt-icon'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/i18n',
+    'nuxt-icon',
+    '@vueuse/nuxt',
+  ],
   colorMode: {
     classSuffix: '',
+  },
+  googleFonts: {
+    families: {
+      Manrope: true,
+      'Source Sans Pro': true,
+    },
   },
   i18n: {
     lazy: true,

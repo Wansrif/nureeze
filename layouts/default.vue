@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <navbar />
-    <div class="bg-white dark:bg-slate-900 dark:text-slate-50">
-      <slot />
-    </div>
+  <div class="bg-primary dark:bg-slate-900 dark:text-slate-50">
+    <Navbar />
+    <slot />
   </div>
 </template>
 

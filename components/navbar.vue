@@ -1,20 +1,18 @@
 <template>
-  <header>
-    <nav class="bg-teal-500 dark:bg-slate-800 dark:text-teal-200">
-      <ul class="flex justify-center items-center gap-6 text-slate-50 p-4 text-lg">
-        <li>
-          <nuxt-link :to="localePath('/')">{{ $t('about_title') }}</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="#project">{{ $t('projects_title') }}</nuxt-link>
-        </li>
-        <li>
-          <LangSwitch />
-        </li>
-        <li>
-          <ThemeSwitch />
-        </li>
-      </ul>
+  <header class="bg-primary dark:bg-slate-900">
+    <nav
+      class="flex items-center justify-between gap-6 pt-8 pb-4 mx-40 mb-4 text-base text-slate-600 dark:text-teal-200">
+      <div class="flex items-center gap-4">
+        <nuxt-link :to="localePath('/')">{{ $t('about_title') }}</nuxt-link>
+        <nuxt-link to="#project">{{ $t('projects_title') }}</nuxt-link>
+      </div>
+      <div class="px-4 border rounded-full cursor-default border-slate-600">
+        <span class="font-semibold">Full Stack Maestro</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <LangSwitch />
+        <ThemeSwitch />
+      </div>
     </nav>
   </header>
 </template>

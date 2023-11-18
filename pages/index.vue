@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-[calc(100vh-60px)]">
-    <h1 v-html="$t('about_me')" />
+  <div class="block">
+    <About />
   </div>
 </template>
 
